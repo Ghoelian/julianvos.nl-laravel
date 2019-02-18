@@ -1,0 +1,3 @@
+[15-Sep-2018 08:38:02 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/julianvos/public_html/JavaScript blok 1/index.php:3) in /home/julianvos/public_html/JavaScript blok 1/index.php on line 6
+[04-Oct-2018 20:33:55 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/julianvos/public_html/JavaScript blok 1/index.php:3) in /home/julianvos/public_html/JavaScript blok 1/index.php on line 6
+[06-Oct-2018 13:17:54 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/julianvos/public_html/JavaScript blok 1/index.php:3) in /home/julianvos/public_html/JavaScript blok 1/index.php on line 6

@@ -1,0 +1,159 @@
+#div1 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#div2 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 0px;
+	left: 101px;
+}
+
+#div3 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 0px;
+	left: 202px;
+}
+
+#div4 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 0px;
+	left: 303px;
+}
+
+#div5 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 101px;
+	left: 0px;
+}
+
+#div6 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 101px;
+	left: 101px;
+}
+
+#div7 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 101px;
+	left: 202px;
+}
+
+#div8 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 101px;
+	left: 303px;
+}
+
+#div9 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 202px;
+	left: 0px;
+}
+
+#div10 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 202px;
+	left: 101px;
+}
+
+#div11 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 202px;
+	left: 202px;
+}
+
+#div12 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 202px;
+	left: 303px;
+}
+
+#div13 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 303px;
+	left: 0px;
+}
+
+#div14 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 303px;
+	left: 101px;
+}
+
+#div15 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 303px;
+	left: 202px;
+}
+
+#div16 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-color: yellow;
+	top: 303px;
+	left: 303px;
+}

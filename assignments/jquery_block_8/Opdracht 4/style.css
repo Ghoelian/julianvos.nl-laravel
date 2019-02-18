@@ -1,0 +1,54 @@
+img {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 400px;
+}
+
+#img1 {
+  left: 0px;
+}
+
+#img2 {
+  left: 250px;
+}
+
+#img3 {
+  left: 500px;
+}
+
+#img4 {
+  left: 750px;
+}
+
+#img5 {
+  left: 1000px;
+}
+
+#img6 {
+  left: 1250px;
+}
+
+#img7 {
+  left: 1500px;
+}
+
+#img8 {
+  left: 1750px;
+}
+
+#img9 {
+  left: 2000px;
+}
+
+#img10 {
+  left: 2250px;
+}
+
+#img11 {
+  left: 2500px;
+}
+
+#img12 {
+  left: 2750px;
+}
