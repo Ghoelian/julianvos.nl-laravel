@@ -126,17 +126,23 @@
     </p>
 
     <p class="w3-large w3-center w3-padding-16">I'm proficient in:</p>
-    <p class="w3-wide"><i class="fab fa-node-js"></i>Node.js</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    <p class="w3-wide w3-center"><i class="fab fa-node-js"></i>Node.js</p>
+    <div class="star-ratings-css">
+      <div class="star-ratings-css-top" style="width: 90%">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
     </div>
-    <p class="w3-wide"><img src="/icons/processing-icon.png" width="15"> Processing</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    <p class="w3-wide w3-center"><img src="/icons/processing-icon.png" width="15"> Processing</p>
+    <div class="star-ratings-css">
+      <div class="star-ratings-css-top" style="width: 90%">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
     </div>
-    <p class="w3-wide"><i class="fab fa-aws"></i>AWS (Lambda, IoT, etc)</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+    <p class="w3-wide w3-center"><i class="fab fa-aws"></i>AWS (Lambda, IoT, etc)</p>
+    <div class="star-ratings-css">
+      <div class="star-ratings-css-top" style="width: 60%">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
     </div>
   </div>
 
@@ -171,7 +177,7 @@
         <a href="/personal_projects/lyrics_graph/">
           <img src="/assets/lyrics.png" href="/personal_projects/lyrics_graph/" style="width:100%"
             class="w3-hover-opacity" alt="Lyrics chart">
-          A song lyrics chart thingy, explanation on page</a>
+          Lyrics repetition chart</a>
       </div>
     </div>
 
@@ -237,7 +243,6 @@
         }
       }
     </script>
-
 </body>
 
 </html>

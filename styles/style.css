@@ -36,3 +36,33 @@ tr,
 th {
   text-align: left
 }
+
+@import "lesshat";
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: rgb(186, 184, 188);
+  font-size: 50px;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+
+.star-ratings-css-top {
+  color: rgb(88, 88, 88);
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.star-ratings-css-bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
