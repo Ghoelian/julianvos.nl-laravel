@@ -37,8 +37,6 @@ th {
   text-align: left
 }
 
-@import "lesshat";
-
 .star-ratings-css {
   unicode-bidi: bidi-override;
   color: rgb(186, 184, 188);
