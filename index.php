@@ -82,7 +82,8 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><img src='/icons/site-logo.png' width='120' height='120'></span><br>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Julian Vos</span>
   </div>
 </div>
 
@@ -168,7 +169,7 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Birmingham, UK<br>
+        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Klazienaveen, Drenthe, NL<br>
         <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +31 [six] 83221625<br>
         <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: post [at] julianvos.nl<br>
       </div>
