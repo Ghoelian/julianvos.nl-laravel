@@ -16,58 +16,19 @@ require_once("../include_head.php");
       </tr>
 
       <?php
-        $counter = 0;
         $projectsFile = file_get_contents("./projects.json");
-        $jsonIterator = new RecursiveIteratorIterator(
-          new RecursiveArrayIterator(json_decode($projectsFile, true)),
-          RecursiveIteratorIterator::SELF_FIRST
-        );
-        
-        foreach ($jsonIterator as $key => $val) {
-            if (!is_array($val)) {
-                if ($counter % 2 == 0) {
-                    echo "<tr>";
-                    echo "<td>$val</td>";
-                } else {
-                    if ($val == true) {
-                        echo "<td>Finished</td>";
-                    } elseif ($val == false) {
-                        echo "<td>In progress</td>";
-                    }
-                    echo "</tr>";
-                }
-                $counter++;
-            }
+        $decoded = json_decode($projectsFile);
+
+        foreach ($decoded as $item) {
+          echo "<tr><td><a href='$item->link'>$item->name</a></td>";
+
+          if ($item->finished == 1) {
+            echo "<td>Finished</td></tr>";
+          } else {
+            echo "<td>In progress</td></tr>";
+          }
         }
-          
       ?>
       </table>
-      
-    <h1>Personal Projects</h1>
-    <ul>      
-      <li>
-        <a href="/personal_projects/snake/index.html">Snake</a>
-      </li>
-      
-      <li>
-        <a href="/personal_projects/match4/index.html">Match 4</a>
-      </li>
-      
-      <li>
-        <a href="/personal_projects/pong/index.html">Pong</a>
-      </li>
-      
-      <li>
-        <a href="/personal_projects/dungeon_drawler/index.html">Dungeon Crawler</a>
-      </li>
-      
-      <li>
-        <a href="/personal_projects/dungeon_crawler_editor/index.html">Dungeon Crawler Level Editor</a>
-      </li>
-
-      <li>
-        <a href="/personal_projects/lyrics_graph/index.php">
-      </li>
-    </ul>
 </body>
 </html>

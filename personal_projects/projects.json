@@ -1,50 +1,67 @@
 [
   {
     "name": "2048",
-    "finished": false
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/sketch_2048"
+  },
+  {
+    "name": "Bomberman",
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Bomberman"
   },
   {
     "name": "Dungeon Crawler",
-    "finished": true
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Dungeon_Crawler"
   },
   {
     "name": "Dungeon Crawler Editor",
-    "finished": true
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Dungeon_Crawler_Editor"
   },
   {
     "name": "Game of Life",
-    "finished": true
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/game_of_life"
   },
   {
-    "name": "Matrix",
-    "finished": true
-  },
-  {
-    "name": "Matrix 2",
-    "finished": true
+    "name": "Matrix Rain",
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Matrix"
   },
   {
     "name": "Pong",
-    "finished": true
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Pong"
   },
   {
     "name": "Snake",
-    "finished": true
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Snake"
   },
   {
     "name": "Song Lyrics Chart",
-    "finished": true
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Song_lyrics_chart"
   },
   {
     "name": "Tetris",
-    "finished": false
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Tetris"
   },
   {
     "name": "Transversion",
-    "finished": false
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Transversion_Processing"
   },
   {
     "name": "Tron",
-    "finished": false
+    "finished": false,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/Tron"
+  },
+  {
+    "name": "Match 4",
+    "finished": true,
+    "link": "https://github.com/Ghoelian/Portfolio/tree/master/match4"
   }
 ]
