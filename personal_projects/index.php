@@ -41,9 +41,6 @@ require_once("../include_head.php");
         }
           
       ?>
-      <tr>
-      <td><input type="button" onclick="location.href='./projectTracker/editProjects.php';" value="Edit"><td>
-      </tr>
       </table>
       
     <h1>Personal Projects</h1>

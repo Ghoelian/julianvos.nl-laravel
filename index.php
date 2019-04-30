@@ -154,31 +154,34 @@
   </div>
 
   <!-- Container (Portfolio Section) -->
-  <div class="w3-content w3-container">
+  <div class="w3-content w3-container w3-center">
     <h3 class="w3-center">MY WORK</h3>
     <p class="w3-center"><em>Some projects I've done.<br></em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
+      <div class="w3-col m4">
         <a href="/personal_projects/snake/">
           <img src="/assets/snake.png" style="width:100%" class="w3-hover-opacity" alt="Snake">
           Snake in P5.js</a>
       </div>
 
-      <div class="w3-col m3">
+      <div class="w3-col m4">
         <a href="/personal_projects/pong/">
           <img src="/assets/pong.png" href="/personal_projects/pong/" style="width:100%" class="w3-hover-opacity"
             alt="Pong">
           Pong in P5.js</a>
       </div>
 
-      <div class="w3-col m3">
+      <div class="w3-col m4">
         <a href="/personal_projects/lyrics_graph/">
           <img src="/assets/lyrics.png" href="/personal_projects/lyrics_graph/" style="width:100%"
             class="w3-hover-opacity" alt="Lyrics chart">
           Lyrics repetition chart</a>
       </div>
+    </div>
+    <div class="w3-row-padding w3-center">
+      <b><a href="/personal_projects/index.php">All projects</a></b>
     </div>
 
     <!-- Third Parallax Image with Portfolio Text -->
