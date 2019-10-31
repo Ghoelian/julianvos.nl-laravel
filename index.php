@@ -198,8 +198,8 @@
         NL<br>
         <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +31 [six]
         83221625<br>
-        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: post [at]
-        julianvos.nl<br>
+        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href="http://scr.im/48ai">p...@j...s.nl</a>
+<br>
       </div>
     </div>
 
