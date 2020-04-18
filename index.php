@@ -132,7 +132,7 @@
         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
     </div>
-    <p class="w3-wide w3-center"><img src="/icons/csharp-icon.png" width="15"> C#</p>
+    <p class="w3-wide w3-center"><img src="/icons/csharp-icon.png" width="15">C# (.NET)</p>
     <div class="star-ratings-css">
       <div class="star-ratings-css-top" style="width: 90%">
         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
