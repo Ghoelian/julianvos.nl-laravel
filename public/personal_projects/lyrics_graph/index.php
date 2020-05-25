@@ -3,9 +3,7 @@
     
     <head>
   <title>Lyrics graph thing idk</title>
-  <?php
-require_once("../../include_head.php");
-?>
+  
 </head>
 
 <body>

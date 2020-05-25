@@ -1,4 +1,4 @@
-let str = "122087@student.drenthecollege.nl 0591316677 7891DD Boterbloem 57 Vrouw";
+let str = "123456@student.drenthecollege.nl 0591316677 1234AB Klinkerstraat 10 Vrouw";
 
 let postcode = str.match(/[0-9]{4}[A-Z]{2}/gi);
 let telefoonnummer = str.match(/[0-9]{4}31[0-9]{4}/g);

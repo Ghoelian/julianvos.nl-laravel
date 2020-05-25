@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <title>Personal Projects</title>
-  <?php
-require_once("../include_head.php");
-?>
+
 </head>
 
 <body>

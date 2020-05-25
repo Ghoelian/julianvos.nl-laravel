@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <title>Bootstrap bullshit</title>
-  <?php
-require_once("../../include_head.php");
-?>
+  
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- jQuery library -->
