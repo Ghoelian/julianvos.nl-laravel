@@ -2,9 +2,7 @@
     
 <head>
   <title>Bootstrap bullshit</title>
-  <?php
-require_once("../../include_head.php");
-?>
+  
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

@@ -2,9 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<?php
-require_once("../../include_head.php");
-?>
+	
 
 	<title>match4</title>
 

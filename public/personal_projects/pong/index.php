@@ -10,9 +10,7 @@
     <script src="../libraries/p5.sound.js"></script>
     <script src="sketch.js"></script>
 
-    <?php
-require_once("../../include_head.php");
-?>
+    
 
     <style>
       body {
