@@ -1,0 +1,50 @@
+.canvas {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 25%;
+  background-color: gray;
+}
+
+button {
+  position: absolute;
+  left: 33%;
+  top: 25%;
+}
+
+input {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+}
+
+#r1 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+
+#r2 {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+}
+
+#r3 {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+}
+
+#r4 {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+}
+
+#r5 {
+  position: absolute;
+  top: 85%;
+  left: 0%;
+}

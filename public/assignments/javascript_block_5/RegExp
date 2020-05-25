@@ -1,0 +1,7 @@
+Opdracht 1
+
+A. /\b[0-9]{4}[A-Z]{2}/gi
+B. /\b[0-9]{4}31[0-9]{4}/g
+C. /\b[A-Z0-9._%+-]@[A-Z0-9.-]\.[A-Z]{2,}\b/gi
+D. /\b[A-Z]{2,}\s[0-9]{1,}/gi
+E. /\bMan\b/gi of /\bVrouw\b/gi

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(52, 52, 52);
+    color: rgb(200, 200, 200);
+}
+
+li, a:link, a:visited, a:active {
+    color: rgb(200, 200, 200);
+}
+
+a:hover {
+    color: white;
+}
+
+table, td, tr {
+    border-collapse: collapse;
+    padding-left: 7px;
+    padding-right: 7px;
+}
