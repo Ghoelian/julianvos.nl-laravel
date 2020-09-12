@@ -15,12 +15,12 @@ var p2down = false;
 var ballMove = false;
 
 function preload() {
-  square = loadFont('fonts/square.ttf');
+  square = loadFont('/scripts/pong/fonts/square.ttf');
   soundFormats("wav");
 
-  wall = loadSound("sound/wall.wav");
-  points = loadSound("sound/point.wav");
-  paddle = loadSound("sound/paddle.wav");
+  wall = loadSound("/scripts/pong/sound/wall.wav");
+  points = loadSound("/scripts/pong/sound/point.wav");
+  paddle = loadSound("/scripts/pong/sound/paddle.wav");
 }
 
 function setup() {
