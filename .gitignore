@@ -116,3 +116,6 @@ dist
 .pnp.*
 
 .old
+
+cache/*
+!cache/.gitkeep
