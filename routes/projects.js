@@ -18,4 +18,16 @@ router.get('/match4', function (req, res, next) {
   res.render('projects/match4/index.pug', { title: 'Match 4 | JULIANVOS.NL' })
 })
 
+router.get('/lyrics_graph', function (req, res, next) {
+  res.render('projects/lyrics_graph/index.pug', { title: 'Lyrics Graph | JULIANVOS.NL' })
+})
+
+router.get('/dungeon_crawler', function (req, res, next) {
+  res.render('projects/dungeon_crawler/index.pug', { title: 'Dungeon Crawler | JULIANVOS.NL' })
+})
+
+router.get('/dungeon_crawler_editor', function (req, res, next) {
+  res.render('projects/dungeon_crawler_editor/index.pug', { title: 'Dungeon Crawler Editor | JULIANVOS.NL' })
+})
+
 module.exports = router

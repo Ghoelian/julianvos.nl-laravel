@@ -24,6 +24,20 @@ html(lang='en')
 		link(rel='stylesheet' href='/styles/all.min.css')
 		link(rel='stylesheet' href='/styles/style.css')
 		script(data-ad-client="ca-pub-8345241265475162" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+		script(src='/libraries/p5.min.js')
+		script(src='/libraries/p5.sound.min.js')
+		script(src='/scripts/pong/sketch.js')
+		style.
+			body {
+				margin: 0;
+				margin-left: 45px;
+				padding: 0;
+				overflow: hidden;
+			}
+			canvas {
+				margin: auto;
+			}
+
 
 	body
 		.w3-top
@@ -49,17 +63,3 @@ html(lang='en')
 				a.w3-bar-item.w3-button(href='#contact' onclick='toggleFunction()') CONTACT
 	br
 	br
-
-	script(src='/libraries/p5.min.js')
-	script(src='/libraries/p5.sound.min.js')
-	script(src='/scripts/pong/sketch.js')
-	style.
-		body {
-			margin: 0;
-			margin-left: 45px;
-			padding: 0;
-			overflow: hidden;
-		}
-		canvas {
-			margin: auto;
-		}

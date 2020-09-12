@@ -148,7 +148,7 @@ function showLevel() {
   fill(255);
   stroke(0);
   textSize(20);
-  text("Items: " + items, 0, height);
+  text("Healing Potions: " + items, 0, height);
 }
 
 function enemyEncounterFunction() {
@@ -193,7 +193,7 @@ function enemyEncounterFunction() {
       fill(0);
      }
 
-    text("Item", width - 100, 625);
+    text("Heal", width - 100, 625);
     textSize(30);
     text("(" + items  + ")", width - 100, 650);
 
