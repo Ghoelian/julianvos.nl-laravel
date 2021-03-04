@@ -50,6 +50,6 @@
     ],
     "theme_color": "#2b5797",
     "background_color": "#2b5797",
-    "start_url": "https://julianvos.nl",
+    "start_url": "{{ env('APP_URL') }}",
     "display": "standalone"
 }
