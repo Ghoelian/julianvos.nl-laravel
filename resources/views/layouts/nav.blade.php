@@ -18,6 +18,9 @@
                 <a class="nav-link" href="#portfolio"><span class="material-icons md-18">apps</span> Portfolio</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#experience"><span class="material-icons md-18">linear_scale</span> Experience</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#contact"><span class="material-icons md-18">email</span> Contact</a>
             </li>
         </ul>
