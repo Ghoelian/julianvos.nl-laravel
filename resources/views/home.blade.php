@@ -2,12 +2,28 @@
 
 @section('title', 'Home')
 
+@push('assets')
+    <script src="/javascript/jtimeline.js"></script>
+    <link href="/styles/jtimeline.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(() => {
+            $('#timeline').jTimeline({
+                resolution: 350000,
+                step: 500,
+                leftArrow: "<",
+                rightArrow: ">"
+            })
+        })
+    </script>
+@endpush
+
 @section('content')
     <div class="h-100" id="home" style="opacity: .75">
         <img src="/icons/site-logo-transparent.webp" class="img-fluid" alt="Website logo" loading="lazy">
     </div>
 
-    <div class="" id="about">
+    <div id="about">
         <h1 class="display-4 text-center">ABOUT ME</h1>
         <p class="font-italic text-center">Programmer, musician, gamer</p>
         <p>
@@ -74,6 +90,56 @@
             <br />
             <a href="">All projects</a>
         </div> --}}
+    </div>
+
+    <br />
+
+    <div id="experience">
+        <h1 class="display-4 text-center">Experience</h1>
+        <p class="font-italic text-center">What I've been up to</p>
+        <div class="jtimeline" id="timeline">
+            <ul class="jtimeline-events">
+                <li class="jtimeline-event" data-timestamp="1388530800">
+                    2014<br />
+                    Started programming in my spare time
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="1503612000">
+                    Aug 2017<br />
+                    Started software developer education
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="1538344800">
+                    Oct 2018<br />
+                    Started internship at Ndevr Ltd.
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="1551394800">
+                    Mar 2018<br />
+                    Finished internship at Ndevr Ltd.
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="1580511600">
+                    Oct 2018<br />
+                    Started internship at Atos
+                </li>
+
+                 <li class="jtimeline-event" data-timestamp="1590962400">
+                    Mar 2018<br />
+                    Finished internship at Atos
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="1596232800">
+                    Aug 2020<br />
+                    Finished software developer education
+                </li>
+
+                 <li class="jtimeline-event" data-timestamp="1600120800">
+                    Sep 2020<br />
+                    Started working at ASUS Holland
+                </li>
+            </ul>
+        </div>
     </div>
 
     <br />
