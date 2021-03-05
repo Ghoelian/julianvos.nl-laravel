@@ -9,7 +9,8 @@
     <script>
         $(document).ready(() => {
             $('#timeline').jTimeline({
-                resolution: 350000,
+                resolution: 100000,
+                minimumSpacing: 100,
                 step: 500,
                 leftArrow: "<",
                 rightArrow: ">"
@@ -99,11 +100,6 @@
         <p class="font-italic text-center">What I've been up to</p>
         <div class="jtimeline" id="timeline">
             <ul class="jtimeline-events">
-                <li class="jtimeline-event" data-timestamp="1388530800">
-                    2014<br />
-                    Started programming in my spare time
-                </li>
-
                 <li class="jtimeline-event" data-timestamp="1503612000">
                     Aug 2017<br />
                     Started software developer education
@@ -137,6 +133,11 @@
                  <li class="jtimeline-event" data-timestamp="1600120800">
                     Sep 2020<br />
                     Started working at ASUS Holland
+                </li>
+
+                <li class="jtimeline-event" data-timestamp="{{  now()->timestamp }}">
+                    Now<br />
+                    Still working at ASUS Holland
                 </li>
             </ul>
         </div>
