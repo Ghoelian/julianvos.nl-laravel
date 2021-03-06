@@ -34,42 +34,11 @@
     <script src="/javascript/jquery-3.6.0.min.js"></script>
     <script src="/javascript/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/c24dda3d1f.js" crossorigin="anonymous"></script>
 
     <style>
-        body {
-            font-family: 'Roboto', sans-serif !important;
-
-            margin-bottom: 60px;
-            /* Margin bottom by footer height */
-        }
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-            /* Set the fixed height of the footer here */
-            line-height: 30px;
-            /* Vertically center the text there */
-            background-color: #375a7f !important;
-            color: rgba(255, 255, 255, .6);
-        }
-
-        .footer-link {
-            color: rgba(255, 255, 255, .6);
-        }
-
-        .footer-link:hover {
-            color: #fff;
-        }
-
     </style>
 
     @stack('assets')
@@ -78,10 +47,14 @@
 <body>
     @include('layouts.nav')
 
-    <div class="container p-1">
-        @yield('content')
-        <span class="fixed-bottom" id="warning"></span>
-        <span class="fixed-bottom" id="success"></span>
+    <div class="content">
+        <div class="content-inside">
+            <div class="container p-1">
+                @yield('content')
+                <span class="fixed-bottom" id="warning"></span>
+                <span class="fixed-bottom" id="success"></span>
+            </div>
+        </div>
     </div>
 
     @include('layouts.footer')

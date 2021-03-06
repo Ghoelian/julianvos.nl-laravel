@@ -65,7 +65,7 @@
 
     <div id="portfolio">
         <h1 class="display-4 text-center">PORTFOLIO</h1>
-        <p class="font-italic text-center">Some of my projects.</p>
+        <p class="font-italic text-center">Some of my projects</p>
 
         <p class="text-center">Work in Progress</p>
 
