@@ -54,6 +54,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .content {
@@ -68,18 +69,19 @@ html, body {
 .footer {
     height: 100px;
     margin-top: -50px;
+    color: rgba(255, 255, 255, .75);
 }
 
-.footer-link, .nav-link {
-    color: #fff !important;
+.footer-link {
+    color: rgba(255, 255, 255, .75);
 }
 
-.footer-link:hover, .nav-link:hover {
-    color: #ddd !important;
+.footer-link:hover {
+    color: #fff;
 }
 
 footer {
-    background: #375a7f;
+    background: #4e5d6c;
     color: #fff;
     line-height: 30px;
     padding: 0 20px;

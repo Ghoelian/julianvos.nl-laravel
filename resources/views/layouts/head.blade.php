@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/bootstrap-darkly.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/material.css">
     <script src="/javascript/jquery-3.6.0.min.js"></script>
     <script src="/javascript/bootstrap.bundle.min.js"></script>
@@ -37,9 +37,6 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/c24dda3d1f.js" crossorigin="anonymous"></script>
-
-    <style>
-    </style>
 
     @stack('assets')
 </head>

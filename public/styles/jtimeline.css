@@ -8,14 +8,14 @@
   padding: 100px 200px;
   overflow: hidden;
 }
-.jtimeline .jtimeline-scroll-left,
-.jtimeline .jtimeline-scroll-right {
+
+.jtimeline .jtimeline-scroll-left, .jtimeline .jtimeline-scroll-right {
   position: absolute;
   cursor: pointer;
   z-index: 20;
 }
-.jtimeline .jtimeline-scroll-left > .jtimeline-arrow,
-.jtimeline .jtimeline-scroll-right > .jtimeline-arrow {
+
+.jtimeline .jtimeline-scroll-left>.jtimeline-arrow, .jtimeline .jtimeline-scroll-right>.jtimeline-arrow {
   width: 50px;
   height: 50px;
   display: flex;
@@ -28,17 +28,20 @@
   border-radius: 999px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
-.jtimeline .jtimeline-scroll-left.is-disabled,
-.jtimeline .jtimeline-scroll-right.is-disabled {
+
+.jtimeline .jtimeline-scroll-left.is-disabled, .jtimeline .jtimeline-scroll-right.is-disabled {
   opacity: 0.25;
   cursor: not-allowed;
 }
+
 .jtimeline .jtimeline-scroll-left {
   left: 10px;
 }
+
 .jtimeline .jtimeline-scroll-right {
   right: 10px;
 }
+
 .jtimeline ul.jtimeline-events {
   min-width: 100%;
   display: block;
@@ -49,6 +52,7 @@
   transform: translate(0, 0);
   transition: 0.5s ease-in-out;
 }
+
 .jtimeline ul.jtimeline-events:before {
   content: "";
   display: block;
@@ -58,12 +62,14 @@
   position: relative;
   left: -25000px;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event {
   display: block;
   position: absolute;
   z-index: 10;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event > .jtimeline-event-bullet {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event>.jtimeline-event-bullet {
   display: block;
   width: 30px;
   height: 30px;
@@ -75,7 +81,8 @@
   position: relative;
   top: -16.5px;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event > .jtimeline-event-label {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event>.jtimeline-event-label {
   position: absolute;
   left: -85px;
   width: 200px;
@@ -83,9 +90,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #222;
+  background-color: #2b3e50;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event > .jtimeline-event-label:after {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event>.jtimeline-event-label:after {
   content: "";
   display: block;
   width: 3px;
@@ -95,28 +103,35 @@
   position: absolute;
   left: 98.5px;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:nth-child(odd) > .jtimeline-event-label {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:nth-child(odd)>.jtimeline-event-label {
   top: -126.5px;
   align-items: flex-end;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:nth-child(odd) > .jtimeline-event-label:after {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:nth-child(odd)>.jtimeline-event-label:after {
   bottom: -11px;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:nth-child(even) > .jtimeline-event-label {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:nth-child(even)>.jtimeline-event-label {
   align-items: flex-start;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:nth-child(even) > .jtimeline-event-label:after {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:nth-child(even)>.jtimeline-event-label:after {
   top: -17.5px;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:hover, .jtimeline ul.jtimeline-events > li.jtimeline-event.is-active {
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:hover, .jtimeline ul.jtimeline-events>li.jtimeline-event.is-active {
   z-index: 20;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:hover > .jtimeline-event-bullet, .jtimeline ul.jtimeline-events > li.jtimeline-event.is-active > .jtimeline-event-bullet {
-  border-color: #3abb67;
-  background-color: #3abb67;
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:hover>.jtimeline-event-bullet, .jtimeline ul.jtimeline-events>li.jtimeline-event.is-active>.jtimeline-event-bullet {
+  border-color: #df691a;
+  background-color: #df691a;
 }
-.jtimeline ul.jtimeline-events > li.jtimeline-event:hover > .jtimeline-event-label:after, .jtimeline ul.jtimeline-events > li.jtimeline-event.is-active > .jtimeline-event-label:after {
-  background-color: #3abb67;
+
+.jtimeline ul.jtimeline-events>li.jtimeline-event:hover>.jtimeline-event-label:after, .jtimeline ul.jtimeline-events>li.jtimeline-event.is-active>.jtimeline-event-label:after {
+  background-color: #df691a;
 }
 
 /*# sourceMappingURL=jtimeline.css.map */

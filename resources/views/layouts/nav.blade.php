@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="{{ route('home') }}">
         <img src="{{ asset('icons/site-logo.webp') }}" height="30" class="d-inline-block align-top" alt="julianvos.nl logo" loading="lazy">
     </a>

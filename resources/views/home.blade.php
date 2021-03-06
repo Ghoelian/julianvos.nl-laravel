@@ -25,7 +25,7 @@
     </div>
 
     <div id="about">
-        <h1 class="display-4 text-center">ABOUT ME</h1>
+        <h1 class="display-4 text-center">About Me</h1>
         <p class="font-italic text-center">Programmer, musician, gamer</p>
         <p>
             I picked up a love for programming in 2013, from watching <a
@@ -64,7 +64,7 @@
     <br />
 
     <div id="portfolio">
-        <h1 class="display-4 text-center">PORTFOLIO</h1>
+        <h1 class="display-4 text-center">Portfolio</h1>
         <p class="font-italic text-center">Some of my projects</p>
 
         <p class="text-center">Work in Progress</p>
@@ -146,7 +146,7 @@
     <br />
 
     <div id="contact">
-        <h1 class="display-4 text-center">CONTACT</h1>
+        <h1 class="display-4 text-center">Contact</h1>
 
         <div class="text-center">
             <p><span class="material-icons md-18">location_on</span> Klazienaveen, Drenthe, NL</p>
