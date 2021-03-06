@@ -70,17 +70,17 @@ html, body {
     margin-top: -50px;
 }
 
-.footer-link {
-    color: rgba(255, 255, 255, .6);
+.footer-link, .nav-link {
+    color: #fff !important;
 }
 
-.footer-link:hover {
-    color: #fff;
+.footer-link:hover, .nav-link:hover {
+    color: #ddd !important;
 }
 
 footer {
     background: #375a7f;
-    color: rgba(255, 255, 255, .6);
+    color: #fff;
     line-height: 30px;
     padding: 0 20px;
 }
