@@ -52,6 +52,7 @@
 }
 
 html, body {
+    scroll-behavior: smooth !important;
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif !important;
@@ -85,4 +86,22 @@ footer {
     color: #fff;
     line-height: 30px;
     padding: 0 20px;
+}
+
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+    width: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+
+.nav-link {
+    cursor: pointer;
 }
