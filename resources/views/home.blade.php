@@ -20,7 +20,7 @@
 @endpush
 
 @section('content')
-    <div class="h-100" id="home" style="opacity: .75">
+    <div class="h-100" id="home">
         <img src="/icons/site-logo-transparent.webp" class="img-fluid" alt="Website logo" loading="lazy">
     </div>
 
@@ -135,7 +135,7 @@
                     Started working at ASUS Holland
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="{{  now()->timestamp }}">
+                <li class="jtimeline-event" data-timestamp="{{ now()->timestamp }}">
                     Now<br />
                     Still working at ASUS Holland
                 </li>
