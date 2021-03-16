@@ -7,6 +7,31 @@
     <link href="/styles/jtimeline.css" rel="stylesheet" />
 
     <script>
+        function onSubmit(token) {
+            const formData = new FormData()
+
+            formData.append('_token', '{{ csrf_token() }}')
+            formData.append('recaptcha_token', token)
+
+             $.ajax({
+                url: '{{ route('recaptcha') }}',
+                method: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false
+            })
+                .done((data) => {
+                    if (data !== false) {
+                        $('#contact-details').html(data)
+                    } else {
+                        $('#contact-details').html('<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>')
+                    }
+                })
+                .fail((error) => {
+                    console.log(error)
+                })
+        }
+
         $(document).ready(() => {
             $('#timeline').jTimeline({
                 resolution: 100000,
@@ -16,6 +41,7 @@
                 rightArrow: ">"
             })
         })
+
     </script>
 @endpush
 
@@ -120,7 +146,7 @@
                     Started internship at Atos
                 </li>
 
-                 <li class="jtimeline-event" data-timestamp="1590962400">
+                <li class="jtimeline-event" data-timestamp="1590962400">
                     Mar 2018<br />
                     Finished internship at Atos
                 </li>
@@ -130,7 +156,7 @@
                     Finished software developer education
                 </li>
 
-                 <li class="jtimeline-event" data-timestamp="1600120800">
+                <li class="jtimeline-event" data-timestamp="1600120800">
                     Sep 2020<br />
                     Started working at ASUS Holland
                 </li>
@@ -148,10 +174,8 @@
     <div id="contact">
         <h1 class="display-4 text-center">Contact</h1>
 
-        <div class="text-center">
-            <p><span class="material-icons md-18">location_on</span> Klazienaveen, Drenthe, NL</p>
-            <p><span class="material-icons md-18">call</span> +31 [six] 48744406</p>
-            <p><span class="material-icons md-18">email</span> post[at]julianvos.nl</p>
+        <div class="text-center" id="contact-details">
+            <button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>
         </div>
     </div>
 @endsection
