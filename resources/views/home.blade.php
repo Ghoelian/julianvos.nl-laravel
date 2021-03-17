@@ -26,7 +26,7 @@
                         } else {
                             $('#contact-details').html(
                                 '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
-                                )
+                            )
                         }
                     })
                     .fail((error) => {
@@ -44,13 +44,22 @@
                 })
 
                 $('.nav-link').click((e) => {
-                    const targetId = $(e.target).attr('id')
-                    const target = document.getElementById(`${targetId}-section`)
-                    const offset = 100
-                    const targetPosition = target.offsetTop
-                    const offsetPosition = targetPosition - offset
+                    e.preventDefault()
 
-                    console.log(targetPosition)
+                    const eventTarget = $(e.target)
+                    const offset = 100
+                    let targetId = null
+
+                    if (eventTarget.prop('tagName') === 'SPAN') {
+                        targetId = $(e.target).parent().attr('id')
+                    } else {
+                        targetId = $(e.target).attr('id')
+                    }
+
+                    const target = $(`#${targetId}-section`)
+
+                    const targetPosition = target.offset().top
+                    const offsetPosition = targetPosition - offset
 
                     window.scrollTo({
                         top: offsetPosition,
