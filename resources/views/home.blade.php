@@ -2,55 +2,72 @@
 
 @section('title', 'Home')
 
-@push('assets')
-    <script src="/javascript/jtimeline.js"></script>
-    <link href="/styles/jtimeline.css" rel="stylesheet" />
+    @push('assets')
+        <script src="/javascript/jtimeline.js"></script>
+        <link href="/styles/jtimeline.css" rel="stylesheet" />
 
-    <script>
-        function onSubmit(token) {
-            const formData = new FormData()
+        <script>
+            function onSubmit(token) {
+                const formData = new FormData()
 
-            formData.append('_token', '{{ csrf_token() }}')
-            formData.append('recaptcha_token', token)
+                formData.append('_token', '{{ csrf_token() }}')
+                formData.append('recaptcha_token', token)
 
-             $.ajax({
-                url: '{{ route('recaptcha') }}',
-                method: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false
-            })
-                .done((data) => {
-                    if (data !== false) {
-                        $('#contact-details').html(data)
-                    } else {
-                        $('#contact-details').html('<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>')
-                    }
+                $.ajax({
+                        url: '{{ route('recaptcha') }}',
+                        method: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false
+                    })
+                    .done((data) => {
+                        if (data !== false) {
+                            $('#contact-details').html(data)
+                        } else {
+                            $('#contact-details').html(
+                                '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
+                                )
+                        }
+                    })
+                    .fail((error) => {
+                        console.log(error)
+                    })
+            }
+
+            $(document).ready(() => {
+                $('#timeline').jTimeline({
+                    resolution: 100000,
+                    minimumSpacing: 100,
+                    step: 500,
+                    leftArrow: "<",
+                    rightArrow: ">"
                 })
-                .fail((error) => {
-                    console.log(error)
+
+                $('.nav-link').click((e) => {
+                    const targetId = $(e.target).attr('id')
+                    const target = document.getElementById(`${targetId}-section`)
+                    const offset = 100
+                    const targetPosition = target.offsetTop
+                    const offsetPosition = targetPosition - offset
+
+                    console.log(targetPosition)
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    })
                 })
-        }
-
-        $(document).ready(() => {
-            $('#timeline').jTimeline({
-                resolution: 100000,
-                minimumSpacing: 100,
-                step: 500,
-                leftArrow: "<",
-                rightArrow: ">"
             })
-        })
 
-    </script>
-@endpush
+        </script>
+    @endpush
 
 @section('content')
-    <div class="h-100" id="home">
+    <div class="h-100" id="home-section">
         <img src="/icons/site-logo-transparent.webp" class="img-fluid" alt="Website logo" loading="lazy">
     </div>
 
-    <div id="about">
+    <div id="about-section">
         <h1 class="display-4 text-center">About Me</h1>
         <p class="font-italic text-center">Programmer, musician, gamer</p>
         <p>
@@ -89,7 +106,7 @@
 
     <br />
 
-    <div id="portfolio">
+    <div id="portfolio-section">
         <h1 class="display-4 text-center">Portfolio</h1>
         <p class="font-italic text-center">Some of my projects</p>
 
@@ -121,7 +138,7 @@
 
     <br />
 
-    <div id="experience">
+    <div id="experience-section">
         <h1 class="display-4 text-center">Experience</h1>
         <p class="font-italic text-center">What I've been up to</p>
         <div class="jtimeline" id="timeline">
@@ -171,11 +188,12 @@
 
     <br />
 
-    <div id="contact">
+    <div id="contact-section">
         <h1 class="display-4 text-center">Contact</h1>
 
         <div class="text-center" id="contact-details">
-            <button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>
+            <button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d"
+                data-callback="onSubmit" data-action="click">Show Contact Info</button>
         </div>
     </div>
 @endsection

@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="header">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{{ \Request::route()->getName() === 'home' ? '#' : route('home') }}" onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;"><span class="material-icons md-18">home</span> Home</a>
+                <a class="nav-link" id="home"><span class="material-icons md-18">home</span> Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about"><span class="material-icons md-18">person</span> About</a>
+                <a class="nav-link" id="about"><span class="material-icons md-18">person</span> About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#portfolio"><span class="material-icons md-18">apps</span> Portfolio</a>
+                <a class="nav-link" id="portfolio"><span class="material-icons md-18">apps</span> Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#experience"><span class="material-icons md-18">linear_scale</span> Experience</a>
+                <a class="nav-link" id="experience"><span class="material-icons md-18">linear_scale</span> Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact"><span class="material-icons md-18">email</span> Contact</a>
+                <a class="nav-link" id="contact"><span class="material-icons md-18">email</span> Contact</a>
             </li>
         </ul>
     </div>
