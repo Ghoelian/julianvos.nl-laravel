@@ -53,24 +53,16 @@
 
 html, body {
     scroll-behavior: smooth !important;
-    height: 100%;
-    margin: 0;
     font-family: 'Roboto', sans-serif !important;
-}
-
-.content {
-    min-height: 100%;
-}
-
-.content-inside {
-    padding: 20px;
-    padding-bottom: 50px;
 }
 
 .footer {
     height: 100px;
-    margin-top: -50px;
     color: rgba(255, 255, 255, .75);
+    background: #4e5d6c;
+    color: rgba(255, 255, 255, .75);
+    line-height: 30px;
+    padding: 0 20px;
 }
 
 .footer-link {
@@ -79,13 +71,6 @@ html, body {
 
 .footer-link:hover {
     color: #fff;
-}
-
-footer {
-    background: #4e5d6c;
-    color: #fff;
-    line-height: 30px;
-    padding: 0 20px;
 }
 
 ::-webkit-scrollbar {

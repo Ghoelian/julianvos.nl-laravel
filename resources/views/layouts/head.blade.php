@@ -45,14 +45,8 @@
 <body>
     @include('layouts.nav')
 
-    <div class="content">
-        <div class="content-inside">
-            <div class="container p-1">
-                @yield('content')
-                <span class="fixed-bottom" id="warning"></span>
-                <span class="fixed-bottom" id="success"></span>
-            </div>
-        </div>
+    <div class="container p-1">
+        @yield('content')
     </div>
 
     @include('layouts.footer')
