@@ -37,10 +37,8 @@
             $(document).ready(() => {
                 $('#timeline').jTimeline({
                     resolution: 100000,
-                    minimumSpacing: 100,
-                    step: 500,
-                    leftArrow: "<",
-                    rightArrow: ">"
+                    minimumSpacing: 125,
+                    step: 500
                 })
 
                 $('.nav-link').click((e) => {
@@ -162,27 +160,27 @@
                     Started internship at Ndevr Ltd.
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="1551394800">
-                    Mar 2018<br />
+                <li class="jtimeline-event" data-timestamp="1553990400">
+                    Mar 2019<br />
                     Finished internship at Ndevr Ltd.
                 </li>
 
                 <li class="jtimeline-event" data-timestamp="1580511600">
-                    Oct 2018<br />
+                    Feb 2020<br />
                     Started internship at Atos
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="1590962400">
-                    Mar 2018<br />
+                <li class="jtimeline-event" data-timestamp="1593475200">
+                    Jun 2020<br />
                     Finished internship at Atos
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="1596232800">
+                <li class="jtimeline-event" data-timestamp="1598832000">
                     Aug 2020<br />
                     Finished software developer education
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="1600120800">
+                <li class="jtimeline-event" data-timestamp="1601424000">
                     Sep 2020<br />
                     Started working at ASUS Holland
                 </li>
