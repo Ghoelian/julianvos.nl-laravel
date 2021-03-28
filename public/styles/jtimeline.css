@@ -126,12 +126,12 @@
 }
 
 .jtimeline ul.jtimeline-events>li.jtimeline-event:hover>.jtimeline-event-bullet, .jtimeline ul.jtimeline-events>li.jtimeline-event.is-active>.jtimeline-event-bullet {
-  border-color: #df691a;
-  background-color: #df691a;
+  border-color: #00bc8c;
+  background-color: #00bc8c;
 }
 
 .jtimeline ul.jtimeline-events>li.jtimeline-event:hover>.jtimeline-event-label:after, .jtimeline ul.jtimeline-events>li.jtimeline-event.is-active>.jtimeline-event-label:after {
-  background-color: #df691a;
+  background-color: #00bc8c;
 }
 
 /*# sourceMappingURL=jtimeline.css.map */
