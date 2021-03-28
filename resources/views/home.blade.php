@@ -117,30 +117,49 @@
         <h1 class="display-4 text-center">Portfolio</h1>
         <p class="font-italic text-center">Some of my projects</p>
 
-        <p class="text-center">Work in Progress</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="{{ route('home') }}" class="portfolio-link">
+                        <img src="/images/snake.webp" class="card-img-top" alt="Snake in P5.js">
+                    </a>
 
-        {{-- <div class="text-center">
-            <div class="portfolio-column mr-3">
-                <a href="{{ route('home') }}">
-                    <img src="/images/snake.webp" class="img-fluid portfolio-image" alt="Snake in P5.js">
-                    Snake in P5.js
-                </a>
+                    <div class="card-body">
+                        <p class="card-text">Snake in P5.js</p>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-column">
-                <a href="{{ route('home') }}">
-                    <img src="/images/pong.webp" class="img-fluid portfolio-image" alt="Pong in P5.js">
-                    Pong in P5.js
-                </a>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="{{ route('home') }}" class="portfolio-link">
+                        <img src="/images/pong.webp" class="card-img-top" alt="Pong in P5.js">
+                    </a>
+
+                    <div class="card-body">
+                        <p class="card-text">Pong in P5.js</p>
+                    </div>
+                </div>
             </div>
-            <div class="portfolio-column ml-3">
-                <a href="{{ route('home') }}">
-                    <img src="/images/lyrics.webp" class="img-fluid mx-auto portfolio-image" alt="Lyrics repetition chart">
-                    Lyrics repetition chart
-                </a>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="{{ route('home') }}" class="portfolio-link">
+                        <img src="/images/lyrics.webp" class="card-img-top" alt="Lyrics repetition chart">
+                    </a>
+
+                    <div class="card-body">
+                        <p class="card-text">Lyrics repetition chart</p>
+                    </div>
+                </div>
             </div>
-            <br />
-            <a href="">All projects</a>
-        </div> --}}
+        </div>
+
+        <br />
+
+        <div class="row">
+                <button class="btn btn-primary mx-auto">All projects</button>
+        </div>
     </div>
 
     <br />

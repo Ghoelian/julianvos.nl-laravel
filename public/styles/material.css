@@ -41,16 +41,6 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
-.portfolio-column:hover {
-    opacity: .6;
-}
-
-.portfolio-column {
-    width: 30%;
-    cursor: pointer;
-    float: left;
-}
-
 html, body {
     scroll-behavior: smooth !important;
     font-family: 'Roboto', sans-serif !important;
@@ -89,4 +79,8 @@ html, body {
 
 .nav-link {
     cursor: pointer;
+}
+
+.portfolio-link:hover {
+    opacity: .8;
 }
