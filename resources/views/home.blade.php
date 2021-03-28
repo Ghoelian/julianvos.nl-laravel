@@ -204,7 +204,7 @@
                     Started working at ASUS Holland
                 </li>
 
-                <li class="jtimeline-event" data-timestamp="{{ now()->timestamp }}">
+                <li class="jtimeline-event is-active" data-timestamp="{{ now()->timestamp }}">
                     Now<br />
                     Still working at ASUS Holland
                 </li>
