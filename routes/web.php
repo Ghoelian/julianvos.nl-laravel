@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\HomeController@getHome')->name('home');
+Route::get('home', 'App\Http\Controllers\HomeController@getHome')->name('home');
+Route::get('about', 'App\Http\Controllers\HomeController@getHome')->name('about');
+Route::get('portfolio', 'App\Http\Controllers\HomeController@getHome')->name('portfolio');
+Route::get('experience', 'App\Http\Controllers\HomeController@getHome')->name('experience');
+Route::get('contact', 'App\Http\Controllers\HomeController@getHome')->name('contact');
 
 Route::post('recaptcha', 'App\Http\Controllers\HomeController@verifyRecaptcha')->name('recaptcha');
 

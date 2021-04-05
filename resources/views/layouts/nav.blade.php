@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="header">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" id="home"><span class="material-icons md-18">home</span> Home</a>
+                <a class="nav-link {{ (\Request::route()->getName() === 'home' || \Request::route()->getName() === '') ? 'active' : '' }}" id="home" href="{{ route('home') }}"><span class="material-icons md-18">home</span> Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="about"><span class="material-icons md-18">person</span> About</a>
+                <a class="nav-link {{ \Request::route()->getName() === 'about' ? 'active' : '' }}" id="about" href="{{ route('about') }}"><span class="material-icons md-18">person</span> About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="portfolio"><span class="material-icons md-18">apps</span> Portfolio</a>
+                <a class="nav-link {{ \Request::route()->getName() === 'portfolio' ? 'active' : '' }}" id="portfolio" href="{{ route('portfolio') }}"><span class="material-icons md-18">apps</span> Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="experience"><span class="material-icons md-18">linear_scale</span> Experience</a>
+                <a class="nav-link {{ \Request::route()->getName() === 'experience' ? 'active' : '' }}" id="experience" href="{{ route('experience') }}"><span class="material-icons md-18">linear_scale</span> Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="contact"><span class="material-icons md-18">email</span> Contact</a>
+                <a class="nav-link {{ \Request::route()->getName() === 'contact' ? 'active' : '' }}" id="contact" href="{{ route('contact') }}"><span class="material-icons md-18">email</span> Contact</a>
             </li>
         </ul>
     </div>

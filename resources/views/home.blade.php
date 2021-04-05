@@ -63,6 +63,16 @@
                         top: offsetPosition,
                         behavior: 'smooth'
                     })
+
+                    $('#home').toggleClass('active', false)
+                    $('#about').toggleClass('active', false)
+                    $('#portfolio').toggleClass('active', false)
+                    $('#experience').toggleClass('active', false)
+                    $('#contact').toggleClass('active', false)
+
+                    eventTarget.toggleClass('active', true)
+
+                    window.history.pushState({}, document.title, targetId)
                 })
             })
 
