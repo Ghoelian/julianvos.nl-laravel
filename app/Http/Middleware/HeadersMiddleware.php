@@ -31,4 +31,4 @@ class HeadersMiddleware
 
         return $response;
     }
-}T
+}
