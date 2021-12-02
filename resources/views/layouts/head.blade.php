@@ -11,10 +11,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.webp" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.webp" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.webp" />
-    <link rel="icon" type="image/png" sizes="194x194" href="/icons/favicon-194x194" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.webp" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.webp" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="/icons/favicon-32x32.webp" />
+    <link rel="icon" type="image/webp" sizes="194x194" href="/icons/favicon-194x194.webp" />
+    <link rel="icon" type="image/webp" sizes="192x192" href="/icons/android-chrome-192x192.webp" />
+    <link rel="icon" type="image/webp" sizes="16x16" href="/icons/favicon-16x16.webp" />
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#e58c45" />
     <link rel="shortcut icon" href="/icons/favicon.ico" />
