@@ -2,82 +2,82 @@
 
 @section('title', 'Home')
 
-    @push('assets')
-        <script src="/javascript/jtimeline.js"></script>
-        <link href="/styles/jtimeline.css" rel="stylesheet" />
+@push('assets')
+    <script src="/javascript/jtimeline.js"></script>
+    <link href="/styles/jtimeline.css" rel="stylesheet" />
 
-        <script>
-            function onSubmit(token) {
-                const formData = new FormData()
+    <script>
+        function onSubmit(token) {
+            const formData = new FormData()
 
-                formData.append('_token', '{{ csrf_token() }}')
-                formData.append('recaptcha_token', token)
+            formData.append('_token', '{{ csrf_token() }}')
+            formData.append('recaptcha_token', token)
 
-                $.ajax({
-                        url: '{{ route('recaptcha') }}',
-                        method: 'POST',
-                        data: formData,
-                        processData: false,
-                        contentType: false
-                    })
-                    .done((data) => {
-                        if (data !== false) {
-                            $('#contact-details').html(data)
-                        } else {
-                            $('#contact-details').html(
-                                '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
-                            )
-                        }
-                    })
-                    .fail((error) => {
-                        console.log(error)
-                    })
-            }
-
-            $(document).ready(() => {
-                $('#timeline').jTimeline({
-                    resolution: 100000,
-                    minimumSpacing: 125,
-                    step: 500
+            $.ajax({
+                    url: '{{ route('recaptcha') }}',
+                    method: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false
                 })
-
-                $('.nav-link').click((e) => {
-                    e.preventDefault()
-
-                    const eventTarget = $(e.target)
-                    const offset = 100
-                    let targetId = null
-
-                    if (eventTarget.prop('tagName') === 'SPAN') {
-                        targetId = $(e.target).parent().attr('id')
+                .done((data) => {
+                    if (data !== false) {
+                        $('#contact-details').html(data)
                     } else {
-                        targetId = $(e.target).attr('id')
+                        $('#contact-details').html(
+                            '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
+                        )
                     }
-
-                    const target = $(`#${targetId}-section`)
-
-                    const targetPosition = target.offset().top
-                    const offsetPosition = targetPosition - offset
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    })
-
-                    $('#home').toggleClass('active', false)
-                    $('#about').toggleClass('active', false)
-                    $('#portfolio').toggleClass('active', false)
-                    $('#experience').toggleClass('active', false)
-                    $('#contact').toggleClass('active', false)
-
-                    eventTarget.toggleClass('active', true)
-
-                    window.history.pushState({}, document.title, targetId)
                 })
+                .fail((error) => {
+                    console.log(error)
+                })
+        }
+
+        $(document).ready(() => {
+            $('#timeline').jTimeline({
+                resolution: 100000,
+                minimumSpacing: 125,
+                step: 500
             })
 
-        </script>
-    @endpush
+            $('.nav-link').click((e) => {
+                e.preventDefault()
+
+                const eventTarget = $(e.target)
+                const offset = 100
+                let targetId = null
+
+                if (eventTarget.prop('tagName') === 'SPAN') {
+                    targetId = $(e.target).parent().attr('id')
+                } else {
+                    targetId = $(e.target).attr('id')
+                }
+
+                const target = $(`#${targetId}-section`)
+
+                const targetPosition = target.offset().top
+                const offsetPosition = targetPosition - offset
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                })
+
+                $('#home').toggleClass('active', false)
+                $('#about').toggleClass('active', false)
+                $('#portfolio').toggleClass('active', false)
+                $('#experience').toggleClass('active', false)
+                $('#contact').toggleClass('active', false)
+
+                eventTarget.toggleClass('active', true)
+
+                window.history.pushState({}, document.title, targetId)
+            })
+        })
+
+    </script>
+@endpush
 
 @section('content')
     <div class="h-100" id="home-section">
@@ -89,9 +89,9 @@
         <p class="font-italic text-center">Programmer, musician, gamer</p>
         <p>
             I picked up a love for programming in 2013, from watching <a
-                href="https://api.julianvos.nl/redirect?destination=https%3A%2F%2Fwww.youtube.com%2Fuser%2Fshiffman&amp;origin=website&amp;date=1614877269681">The
+                href="{{ route('api/redirect', ['redirectUrl' => urlEncode('https://www.youtube.com/user/shiffman')]) }}">The
                 Coding Train</a>. I learned the basics of <a
-                href="https://api.julianvos.nl/redirect?destination=https%3A%2F%2Fwww.processing.org&amp;origin=website&amp;date=1614877269681">Processing</a>,
+                href="{{ route('api/redirect', ['redirectUrl' => 'https://processing.org']) }}">Processing</a>,
             and started following an official programming education in 2017.</p>
         <p>From October 2018 until March 2019, I was participating in an international internship in the UK, where I have
             been
@@ -107,7 +107,7 @@
         <p>
             For as long as I can remember, video games have been a part of my life. My all-time favourite game is The Legend
             of Zelda: Ocarina of Time, closely followed by <a
-                href="https://api.julianvos.nl/redirect?destination=https%3A%2F%2Fclonehero.net&amp;origin=website&amp;date=1614877269681">Clone
+                href="{{ route('api/redirect', ['redirectUrl' => 'https://clonehero.net']) }}">Clone
                 Hero</a> and Breath of the Wild.
         </p>
         <p>
@@ -168,7 +168,7 @@
         <br />
 
         <div class="row">
-                <button class="btn btn-primary mx-auto">All projects</button>
+                <button class="btn btn-primary mx-auto" onclick="window.location = '{{ route('projects') }}'">All projects</button>
         </div>
     </div>
 

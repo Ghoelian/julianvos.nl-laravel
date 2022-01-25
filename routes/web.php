@@ -13,3 +13,5 @@ Route::post('recaptcha', 'App\Http\Controllers\HomeController@verifyRecaptcha')-
 
 Route::get('privacy-policy', 'App\Http\Controllers\HomeController@privacyPolicy')->name('privacy-policy');
 Route::get('terms-of-service', 'App\Http\Controllers\HomeController@termsOfService')->name('terms-of-service');
+
+Route::get('projects', 'App\Http\Controllers\ProjectsController@getProjects')->name('projects');
