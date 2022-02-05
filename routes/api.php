@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('api')->group(function () {
-    Route::get('redirect/{redirectUrl}', 'App\Http\Controllers\RedirectController@redirect')->name('api/redirect');
-});
+Route::get('redirect/{redirectUrl}', 'App\Http\Controllers\RedirectController@redirect')->name('api/redirect');
