@@ -9,7 +9,7 @@ class RedirectController extends Controller
 {
     public function redirect(Request $request)
     {
-        $redirectUrl = $request->input('redirectUrl');
+        $redirectUrl = urldecode($request->input('redirectUrl'));
 
         return redirect()->away($redirectUrl);
     }
