@@ -89,9 +89,9 @@
         <p class="font-italic text-center">Programmer, musician, gamer</p>
         <p>
             I picked up a love for programming in 2013, from watching <a
-                href="{{ route('api/redirect', ['redirectUrl' => urlEncode('https://www.youtube.com/user/shiffman')]) }}">The
+                href="{{ route('api/redirect', ['redirectUrl' => urlencode('https://www.youtube.com/user/shiffman')]) }}">The
                 Coding Train</a>. I learned the basics of <a
-                href="{{ route('api/redirect', ['redirectUrl' => 'https://processing.org']) }}">Processing</a>,
+                href="{{ route('api/redirect', ['redirectUrl' => urlencode('https://processing.org')]) }}">Processing</a>,
             and started following an official programming education in 2017.</p>
         <p>From October 2018 until March 2019, I was participating in an international internship in the UK, where I have
             been
@@ -107,7 +107,7 @@
         <p>
             For as long as I can remember, video games have been a part of my life. My all-time favourite game is The Legend
             of Zelda: Ocarina of Time, closely followed by <a
-                href="{{ route('api/redirect', ['redirectUrl' => 'https://clonehero.net']) }}">Clone
+                href="{{ route('api/redirect', ['redirectUrl' => urlencode('https://clonehero.net')]) }}">Clone
                 Hero</a> and Breath of the Wild.
         </p>
         <p>
