@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('redirect/{redirectUrl}', 'App\Http\Controllers\RedirectController@redirect')->name('api/redirect');
+Route::get('redirect', 'App\Http\Controllers\RedirectController@redirect')->name('api/redirect');

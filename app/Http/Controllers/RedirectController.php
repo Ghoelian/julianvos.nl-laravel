@@ -7,8 +7,10 @@ use Illuminate\Routing\Controller;
 
 class RedirectController extends Controller
 {
-    public function redirect(Request $request, $redirectUrl)
+    public function redirect(Request $request)
     {
+        $redirectUrl = $request->input('redirectUrl');
+
         return redirect($redirectUrl);
     }
 }
