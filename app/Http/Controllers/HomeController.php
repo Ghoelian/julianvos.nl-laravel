@@ -42,8 +42,8 @@ class HomeController extends Controller
         $context = stream_context_create($options);
         $result = json_decode(file_get_contents($url, false, $context));
 
-        if ($result->success && $result->score >= 0.5) {
-            return '<p><span class="material-icons md-18">location_on</span> Klazienaveen, Drenthe, NL</p>
+        if ($result->success && $result->score >= 0.7) {
+            return '<p><span class="material-icons md-18">location_on</span> Emmen, Drenthe, NL</p>
             <p><span class="material-icons md-18">call</span> +31 6 48744406</p>
             <p><span class="material-icons md-18">email</span> <a href="mailto://post@julianvos.nl" />post@julianvos.nl</p>';
         } else {
