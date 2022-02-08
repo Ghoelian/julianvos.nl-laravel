@@ -22,7 +22,7 @@
                 })
                 .done((data) => {
                     if (data !== false) {
-                        $('#contact-details').html(data)
+                        $('#contact-details').html($(data))
                     } else {
                         $('#contact-details').html(
                             '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
