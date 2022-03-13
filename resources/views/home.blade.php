@@ -213,10 +213,15 @@
                     Sep 2020<br />
                     Started working at ASUS Holland
                 </li>
+                
+                <li class="jtimeline-event" data-timestamp="1647298800">
+                    Mar 2022<br />
+                    Started working at Eventree
+                </li>
 
                 <li class="jtimeline-event is-active" data-timestamp="{{ now()->timestamp }}">
                     Now<br />
-                    Still working at ASUS Holland
+                    Still working at Eventree
                 </li>
             </ul>
         </div>
