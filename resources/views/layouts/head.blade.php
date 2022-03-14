@@ -18,6 +18,7 @@
     <link rel="manifest" href="/icons/site.webmanifest" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#e58c45" />
     <link rel="shortcut icon" href="/icons/favicon.ico" />
+
     <meta name="apple-mobile-web-app-title" content="Julian Vos" />
     <meta name="application-name" content="Julian Vos" />
     <meta name="msapplication-TileColor" content="#2b5797" />
@@ -26,17 +27,15 @@
     <meta name="theme-color" content="#2b5797" />
     <meta name="Description" content="Personal website of Julian Vos" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/material.css">
-    <script src="/javascript/jquery-3.6.0.min.js"></script>
-    <script src="/javascript/bootstrap.bundle.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/c24dda3d1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css" nonce="{{ csp_nonce() }}" />
+    <link rel="stylesheet" href="/css/app.css" nonce="{{ csp_nonce() }}" />
+    <link rel="stylesheet" href="/css/material.css"  nonce="{{ csp_nonce() }}" />
+
+    <script src="/js/app.js" nonce="{{ csp_nonce() }}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
     @stack('assets')

@@ -3,80 +3,7 @@
 @section('title', 'Home')
 
 @push('assets')
-    <script src="/javascript/jtimeline.js"></script>
-    <link href="/styles/jtimeline.css" rel="stylesheet" />
-
-    <script>
-        function onSubmit(token) {
-            const formData = new FormData()
-
-            formData.append('_token', '{{ csrf_token() }}')
-            formData.append('recaptcha_token', token)
-
-            $.ajax({
-                    url: '{{ route('recaptcha') }}',
-                    method: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false
-                })
-                .done((data) => {
-                    if (data !== false) {
-                        $('#contact-details').html($(data))
-                    } else {
-                        $('#contact-details').html(
-                            '<button class="btn btn-primary g-recaptcha" data-sitekey="6LcWLoIaAAAAAPddYiFygvar6ztBHGneqTzKov7d" data-callback="onSubmit" data-action="click">Show Contact Info</button>'
-                        )
-                    }
-                })
-                .fail((error) => {
-                    console.log(error)
-                })
-        }
-
-        $(document).ready(() => {
-            $('#timeline').jTimeline({
-                resolution: 100000,
-                minimumSpacing: 125,
-                step: 500
-            })
-
-            $('.nav-link').click((e) => {
-                e.preventDefault()
-
-                const eventTarget = $(e.target)
-                const offset = 100
-                let targetId = null
-
-                if (eventTarget.prop('tagName') === 'SPAN') {
-                    targetId = $(e.target).parent().attr('id')
-                } else {
-                    targetId = $(e.target).attr('id')
-                }
-
-                const target = $(`#${targetId}-section`)
-
-                const targetPosition = target.offset().top
-                const offsetPosition = targetPosition - offset
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                })
-
-                $('#home').toggleClass('active', false)
-                $('#about').toggleClass('active', false)
-                $('#portfolio').toggleClass('active', false)
-                $('#experience').toggleClass('active', false)
-                $('#contact').toggleClass('active', false)
-
-                eventTarget.toggleClass('active', true)
-
-                window.history.pushState({}, document.title, targetId)
-            })
-        })
-
-    </script>
+    <script src="/js/home.js" nonce="{{ csp_nonce() }}"></script>
 @endpush
 
 @section('content')
@@ -168,7 +95,7 @@
         <br />
 
         <div class="row">
-                <button class="btn btn-primary mx-auto" onclick="window.location = '{{ route('projects') }}'">All projects</button>
+                <button class="btn btn-primary col-sm-2 mx-auto" id="all-projects-button">All projects</button>
         </div>
     </div>
 
@@ -177,53 +104,7 @@
     <div id="experience-section">
         <h1 class="display-4 text-center">Experience</h1>
         <p class="font-italic text-center">What I've been up to</p>
-        <div class="jtimeline" id="timeline">
-            <ul class="jtimeline-events">
-                <li class="jtimeline-event" data-timestamp="1503612000">
-                    Aug 2017<br />
-                    Started software developer education
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1538344800">
-                    Oct 2018<br />
-                    Started internship at Ndevr Ltd.
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1553990400">
-                    Mar 2019<br />
-                    Finished internship at Ndevr Ltd.
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1580511600">
-                    Feb 2020<br />
-                    Started internship at Atos
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1593475200">
-                    Jun 2020<br />
-                    Finished internship at Atos
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1598832000">
-                    Aug 2020<br />
-                    Finished software developer education
-                </li>
-
-                <li class="jtimeline-event" data-timestamp="1601424000">
-                    Sep 2020<br />
-                    Started working at ASUS Holland
-                </li>
-                
-                <li class="jtimeline-event" data-timestamp="1647298800">
-                    Mar 2022<br />
-                    Started working at Eventree
-                </li>
-
-                <li class="jtimeline-event is-active" data-timestamp="{{ now()->timestamp }}">
-                    Now<br />
-                    Still working at Eventree
-                </li>
-            </ul>
+        <div id="experience">
         </div>
     </div>
 
