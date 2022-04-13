@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @push('assets')
-    <script src="/js/home.js" nonce="{{ csp_nonce() }}"></script>
+    <script src="{{ mix("js/home.js") }}" nonce="{{ csp_nonce() }}"></script>
 @endpush
 
 @section('content')
