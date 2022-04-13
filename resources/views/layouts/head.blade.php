@@ -31,11 +31,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/bootstrap.css" nonce="{{ csp_nonce() }}" />
-    <link rel="stylesheet" href="/css/app.css" nonce="{{ csp_nonce() }}" />
-    <link rel="stylesheet" href="/css/material.css"  nonce="{{ csp_nonce() }}" />
+    <link rel="stylesheet" href="{{ mix("css/bootstrap.css") }}" nonce="{{ csp_nonce() }}" />
+    <link rel="stylesheet" href="{{ mix("css/app.css") }}" nonce="{{ csp_nonce() }}" />
+    <link rel="stylesheet" href="{{ mix("css/material.css") }}"  nonce="{{ csp_nonce() }}" />
 
-    <script src="/js/app.js" nonce="{{ csp_nonce() }}"></script>
+    <script src="{{ mix("js/app.js") }}" nonce="{{ csp_nonce() }}"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
     @stack('assets')
